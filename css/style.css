@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0;padding:0;}
+ul,ol{list-style:none;}
+a{text-decoration:none;}
+img, input, textarea{border:none;}
+.clearfix:before,.clearfix:after{content: "";display: block; overflow: hidden; visibility: hidden;font-size: 0;line-height: 0;width: 0;height: 0;}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+header .header_inner{width:1170px;height:50px;margin:0 auto;background-color:#fff;box-shadow:0 0 40px -5px rgba(0,0,0,0.3);position:relative;z-index:3;position: absolute;left: 20%;top: 25px;}
+header .header_inner .logo{float:left;line-height:45px;margin-right:75px;margin-left:20px;padding-top:6px;}
+/*header .header_inner .logo img{line-height:50px;}*/
+header .header_inner ul{float:left;margin-top:10px;display:inline-block;padding-top:5px;}
+header .header_inner li{float:left;}
+header .header_inner li:hover{display: block}
+header .header_inner li a{height:100%;display:block;padding:0 38px;color:#212121;font-size:14px;}
+header .header_inner li a:hover{color:#ccc;}
+header .header_inner .nav_right .fa-user{display:block;width:49px;height:39px;float:right;text-align:center;line-height:39px;color:#ccc;padding-top:5px;margin-right: 30px;}
+header .header_inner .nav_right .fa-shopping-cart{float:right;width:49px;height:39px;text-align:center;padding-right: 50px; line-height:39px;color:#ccc;padding-top:5px;}
+/*导航下拉*/
+header .header_inner .nav ul li >.collapse{width: 1170px;position: absolute;left: 50%;top: 48px;margin-left: -585px;
+    z-index: 9;transition: all 200ms ease-out;background-color: #ffffff;box-shadow:0 0 40px -10px rgba(0,0,0,0.2);}
+header .header_inner .nav ul li >.collapse .collapse-content>ul>li>a .mn{width: 391px;margin-right: 50px;}
+header .header_inner .nav ul li >.collapse .collapse-content li span{display: block;height: 24px;color: #212121;text-align: center;font-size: 24px;font-weight: bolder;padding-bottom: 15px;}
+
+header .header_inner .nav ul li >.collapse2{width: 1170px;background-color: #ffffff; position: absolute;left: 50%;top: 48px;margin-left: -585px;z-index: 9;box-shadow:0 0 30px -10px rgba(0,0,0,0.2);}
+header .header_inner .nav ul li >.collapse2 .collapse-content2 ul{position: relative;height: 100%;width: 100%;}
+header .header_inner .nav ul li >.collapse2 .collapse-content2 ul li{float: left;width: 261px;height: 110px;padding: 0;
+    margin: 65px 64px;}
+header .header_inner .nav ul li >.collapse2 .collapse-content2 ul li a{}
+header .header_inner .nav ul li >.collapse2 .collapse-content2 ul li .service_bg{width: 72px;height: 72px;
+    line-height: 72px;margin-top: 19px;margin-left: 30px;text-align: center;float: left;background:url("../images/service_03.jpg") no-repeat 0 0; }
+header .header_inner .nav ul li >.collapse2 .collapse-content2 ul li .service_bg2{width: 72px;height: 72px;
+    line-height: 72px;margin-top: 13px;margin-left: 30px;text-align: center;float: left;background:url("../images/service_04.jpg") no-repeat 0 0; }
+header .header_inner .nav ul li >.collapse2 .collapse-content2 ul li .service_bg3{width: 72px;height: 72px;
+    line-height: 72px;margin-top: 13px;margin-left: 30px;text-align: center;float: left;background:url("../images/service_05.jpg") no-repeat 0 0; }
+header .header_inner .nav ul li >.collapse2 .collapse-content2 ul li .title{font-size: 20px;margin-top: 15px;text-align: left;}
+
+
+.footer{background-color: #fafafa;}
+.footer .footer_top{width: 1200px;margin: 0 auto;}
+.footer .footer_top ul{width: 1140px;margin: 0 auto;height: 220px;}
+.footer .footer_top ul li{width: 160px;height: 190px;float: left;margin-top: 30px;margin-right: 30px;text-align: left;}
+.footer .footer_top ul li dt{margin: 15px 0 5px 30px; font-size: 14px;color: #6c6670;font-weight: bolder;}
+.footer .footer_top ul li dd a{margin: 0 0 0 30px; font-size: 12px;color: #a4a9ad;height: 24px;line-height: 24px;}
+.footer .footer_top ul li dd i{margin-left: -26px;padding-right: 10px;}
+.footer .footer_top ul li dd:hover a{color: #535252;}
+.footer .footer_bot{width: 1200px;margin: 30px auto 0;height: 35px;}
+.footer .footer_bot p{font-size: 12px;color: #a4a9ad;padding-left: 60px;float: left;}
+.footer .footer_bot .bot_right{font-size: 12px;color: #a4a9ad;padding-right: 60px;float: right;}
+.footer .footer_bot .bot_right a{color: #a4a9ad;}
+

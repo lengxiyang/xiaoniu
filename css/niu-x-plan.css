@@ -1,0 +1,33 @@
+
+#ban{position: relative;}
+#ban #tabs>ol{width: 100px; position: absolute;bottom: 10%;left: 50%;}
+#ban #tabs ol li{float: left;margin-right: 8px;}
+#ban #tabs ol li .cur{background-color: red;}
+#ban #tabs ol li a{display: block; width: 18px;height: 4px;background-color: #ffffff;}
+#ban #tabs #content{width: 100%;}
+#ban #tabs #content a img{width: 100%;}
+#ban #tabs #content > div{display: none;}
+
+
+.main .inner{width: 1140px;}
+.main .inner ul li{width: 100%;padding-bottom: 30px;}
+.main .inner ul li .left{float: left; width: 495px;height: 300px;padding: 30px;margin-right: 30px;position: relative;}
+.main .inner ul li .left .artist{display: block;width: 78px;height: 30px;background-color: #000;
+    border-radius: 4px;font-size: 12px;text-align: center;color: #ffffff;line-height: 30px;}
+.main .inner ul li .left h1{font-size: 36px;height: 48px;line-height: 48px;}
+.main .inner ul li .left h2{font-size: 36px;height: 48px;line-height: 48px;margin-bottom: 60px;
+    color: #5c6670;font-weight: 200;}
+.main .inner ul li .left p{position: absolute;font-size: 14px;color: #5c6670;bottom: 40px;
+    line-height: 20px;margin: 0 30px 20px 0;width: 495px;font-weight: normal;}
+.main .inner ul li .left .bot{position: absolute;width: 100%;bottom: 15px;height: 20px;line-height: 20px;font-size: 14px;}
+.main .inner ul li .left .bot span{color: #a4a9ad;float: left;}
+.main .inner ul li .left .bot a{color: #df001f;float: right;margin-right: 30px;width: 90px;transition: all 2s ease-out}
+.main .inner ul li .left .bot a i{font-size: 12px;margin-left: 5px;transition: all 1s;}
+.main .inner ul li .left .bot a:hover i{margin-left: 15px;transition: all 1s;}
+.main .inner ul li > .fl_l{float: left;}
+.main .inner ul li > .fl_r{float: right;}
+.main .inner ul li .right{width: 495px;height: 360px;float: left;}
+.main .inner ul li .right img{width: 100%;height: 100%;border-radius: 4px;}
+
+
+

@@ -1,0 +1,83 @@
+.main{width: 100%;}
+.main .order1{background:url("../images/order1.jpg") no-repeat center center ;width: 100%; height: 800px;position: relative;}
+.main .order1 .tittle1{position: absolute;left: 50%;top: 224px;}
+.main .order1 .tittle2{position: absolute;left: 50%;top: 367px;}
+.main .order1 .txt1{position: absolute;left: 50%;top: 468px;width: 198px;height: 38px;line-height: 36px;
+    color: #eee5e5;text-align: center;border: 1px solid #ffffff;border-radius: 4px;}
+.main .order1 .txt1:hover{background-color: #ffffff;transition: all 0.5s;color: red;}
+.main .order1 .txt2{width: 60px;height: 20px;position: absolute;left: 50%;top: 480px;
+    font-size: 12px;color: #eee5e5;margin-left: 248px;}
+
+.main .order2 .order2-1{background: url("../images/order2-1.png") no-repeat center center;width: 100%;height: 372px;}
+.main .order2 .order2-2{background: url("../images/order2-2.png") no-repeat center center;width: 100%;height: 702px;position: relative;}
+.main .order2 .order2-2 ul{width: 1100px;height: 620px;position: absolute;left: 45%;
+    margin-left: -314px;top: 54px;overflow: hidden;}
+.main .order2 .order2-2 ul .clearfix{margin: 0;}
+.main .order2 .order2-2 ul li{position: relative;height: 188px;width: 488px;float: left;}
+.main .order2 .order2-2 ul li .top_pic{position: relative;height: 182px;width: 220px;float: left;}
+.main .order2 .order2-2 ul li .top_pic .openImg{display: block;opacity: 1;-webkit-transition: All 0.2s ease-in-out;}
+.main .order2 .order2-2 ul li .top_pic .openImg:hover{transform: scale(2,2);opacity: 0;}
+.main .order2 .order2-2 ul li .top_pic img{position: absolute;margin-top: -14px;}
+
+.main .order2 .order2-2 ul li .textImg{margin-top: 42px;float: left;}
+.main .order2 .order2-3{background: url("../images/order2-3.png") no-repeat center center;width: 100%;height: 707px;}
+
+.main .order3{background:url("../images/order3.png") no-repeat center center ;width: 100%; height: 594px;position: relative;}
+.main .order3 a{position: absolute;width: 164px;height: 40px;border: 2px solid #df001f;
+    border-radius: 20px;text-align: center;line-height: 40px;color: #df001f;left: 50%;bottom: 180px;
+    margin-left: -56px;font-size: 20px;}
+.main .order3 a:hover{background-color: red;color: #ffffff;}
+
+.main .order4{background:url("../images/order4.png") no-repeat center center ;width: 100%; height: 637px;position: relative;}
+.main .order4 a{position: absolute;width: 200px;height: 40px;border: 2px solid #df001f;
+    border-radius: 20px;text-align: center;line-height: 40px;color: #df001f;left: 50%;bottom: 260px;
+    margin-left: -234px;font-size: 20px;}
+.main .order4 a:hover{background-color: red;color: #ffffff;}
+.main .order5{background:url("../images/order5.png") no-repeat center center ;
+    width: 100%; height: 658px;position: relative;}
+.main .order5 .order5-1{position: absolute;left: 44%;top: 270px;width: 500px;margin-right: 200px;}
+.main .order5 .order5-1 .leftBtn{position: absolute;left: 70px;top: 86px;font-size: 28px;z-index: 9;cursor: pointer;}
+.main .order5 .order5-1 .rightBtn{position: absolute;right: 70px;top: 86px;font-size: 28px;z-index: 9;cursor: pointer;}
+.main .order5 .order5-1 .order5-1-1{position: relative;width: 500px;height: 340px;overflow: hidden;}
+.main .order5 .order5-1 .order5-1-1 ul{width: 1500px;height: 260px;position: absolute;top: 0;left: 0;}
+.main .order5 .order5-1 .order5-1-1 ul li{width: 500px;float: left;position: relative;margin: 0;}
+.main .order5 .order5-1 ul li .user{width: 100%;text-align: center;padding-top: 25px;padding-bottom: 25px;}
+.main .order5 .order5-1 ul li .user img{width: 86px;height: 86px;border-radius: 4px;}
+.main .order5 .order5-1 ul li .user p{line-height: 46px;font-weight: normal;color: #454545;}
+.main .order5 .order5-1 ul li p{line-height: 22px;font-weight: normal;color: #454545;}
+.main .order6{background:url("../images/order7.png") no-repeat center center ;
+    width: 100%; height: 425px;}
+.main .order7{background:url("../images/order8.png") no-repeat center center ;
+    width: 100%; height: 365px;}
+.main .order8{background:url("../images/cityName-four-1.jpg") no-repeat center center ;
+    width: 100%; height: 574px;position: relative;}
+.main .order8 a{width: 200px;height: 50px;line-height: 50px;color: #fff;text-align: center;
+    position: absolute;left: 50%;top: 70%;margin-left: -100px;border-radius: 4px;
+    border: 1px solid #fff;transition: all 1s;}
+.main .order8 a:hover{background-color: #ffffff;color: red;}
+
+.footer{width: 100%;background-color: #f7f7f7;}
+.footer .inner{width: 1140px;margin: 0 auto;}
+.footer .inner ul{width: 1140px;height: 240px;border-bottom: 1px solid #212121;}
+.footer .inner ul li{width: 160px;height: 190px;float: left;text-align: left;
+    margin: 30px 30px 0 0;}
+.footer .inner ul li h3{font-size: 14px;font-weight: normal;color: #5c6670;margin: 15px 0 5px 30px;}
+.footer .inner ul li p{margin: 0 0 0 30px;color: #a4a9ad;height: 24px;line-height: 24px;font-size: 12px;cursor: pointer;}
+.footer .inner ul li p:hover{color: #646363;}
+
+.boot {width: 100%;background-color: #212121;height: 42px;line-height: 42px;margin-top: 30px;}
+.boot .inner p{font-size: 12px;color: #fff;padding-left: 60px;float: left;}
+.boot .inner .bot_right{font-size: 12px;color: #a4a9ad;padding-right: 60px;float: right;}
+.boot .inner .bot_right a{color: #a4a9ad;}
+
+
+
+
+
+
+
+
+
+
+
+
