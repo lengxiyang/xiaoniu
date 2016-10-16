@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/niu-x-plan.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery/jquery-3.1.0.js"></script>
+    <script src="js/hxsd_tools.js"></script>
+    <script src="js/index.js"></script>
+    <title>niu-x-plan</title>
+    <script>
+        $(function () {
+            var tabs=$("#content>div");
+            tabs.eq(0).show();
+            $("#tabs ol").find("li").each(function (index) {
+                $(this).on("click",function(){
+                    $(this).children().addClass("cur");
+                    $(this).siblings().children().removeClass("cur");
+                    tabs.eq(index).show().siblings().hide();
+                });
+            });
+            var timer=null;
+            function tab(){
+                var num=$("#tabs ol").find("li");
+                var a=0;
+                timer=setInterval(function(){
+                    if(a>=num.length){
+                        a=0;
+                        $("#tabs ol").find("li").eq(a).click();
+                        a++;
+                    }else {
+                        $("#tabs ol").find("li").eq(a).click();
+                        a++;
+                    }
+                },1500);
+            };
+            $("#tabs #content").on("mouseover",function(){
+                clearInterval(timer);
+            });
+            $("#tabs #content").on("mouseout",function(){
+                tab();
+            });
+            tab();
+        });
+    </script>
+</head>
+<body>
+<header>
+    <div class="header_inner clearfix">
+        <div class="logo"><a href="#"><img src="images/logo_03.jpg"></a></div>
+        <div class="nav">
+            <ul>
+                <li id="smallCart">
+                    <a href="index.html">小牛电动</a>
+                    <div class="collapse" style="display: none;">
+                        <div class="collapse-content">
+                            <ul>
+                                <li>
+                                    <a href="#"><img class="mn" src="images/m1.jpg"/><span>M1</span> </a>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="mn" src="images/n1.jpg"/><span>N1S</span> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="products.html">商城</a></li>
+                <li><a href="niu-x-plan.html">niu x plan</a></li>
+                <li><a href="xiaoniuTry.html">新车试驾</a></li>
+                <li id="services">
+                    <a href="#">服务</a>
+                    <div class="collapse2" style="display: none;">
+                        <div class="collapse-content2">
+                            <ul>
+                                <li>
+                                    <div class="service_bg"></div>
+                                    <a target="_blank" href="#">
+                                        <div class="title">
+                                            <p>NIU CARE</p>
+                                            <p>保养计划</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="service_bg2"></div>
+                                    <a target="_blank" href="#">
+                                        <div class="title">
+                                            <p>牛油保</p>
+                                            <p>人车保险</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="service_bg3"></div>
+                                    <a target="_blank" href="#">
+                                        <div class="title">
+                                            <p>网点</p>
+                                            <p>查找线下服务</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">社区</a></li>
+            </ul>
+        </div>
+        <div class="nav_right">
+            <a href="#" class="fa fa-user"></a>
+            <a href="#" class="fa fa-shopping-cart"></a>
+        </div>
+    </div>
+</header>
+<div class="clearfix" id="ban">
+    <div id="tabs">
+        <ol>
+            <li><a href="#" class="cur"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ol>
+        <div id="content">
+            <div>
+                <a href="javascript:;"><img src="images/kv-strawberry-chengdu_7bebfecd.jpg"/></a>
+            </div>
+            <div>
+                <a href="javascript:;"><img src="images/niuxplan-zhangyue_c8ee22bd.jpg"/></a>
+            </div>
+            <div>
+                <a href="javascript:;"><img src="images/niuxplan-agency_ccdcf6c6.jpg"/></a>
+            </div>
+        </div><!--end content-->
+    </div><!--end tabs-->
+</div>
+<div class="main">
+    <div class="inner clearfix">
+        <ul>
+            <li>
+                <div class="left">
+                    <a href="#" class="artist">ARTIST</a>
+                    <h1>NIU x 音乐制作人 大龙</h1>
+                    <h2>音乐人与工程师的跨界创作</h2>
+                    <p>去年合作也算是一种缘分吧。经过朋友的介绍，找到了我为小牛新品首发的广告作曲。沟通了广告创意之后，很喜欢那样的宣传手法，加上车又很帅，当时很有动力把这件事做得很好，于是我们开始了第一次合作。到了今年，小牛再次问我是否愿意第二次合作，我说：“废话，肯定啊！”小牛的宣传方式在我看来一直很有创意，我会很好奇今年小牛会怎么玩。</p>
+                    <div class="bot">
+                        <span>六月 20 2016</span>
+                        <a>了解更多<i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="images/dalong0_1423911f.jpg">
+                </div>
+            </li>
+            <li>
+                <div class="right fl_l">
+                    <img src="images/bitao0_29197c29.jpg">
+                </div>
+                <div class="left fl_r">
+                    <a href="#" class="artist">FRIENDS</a>
+                    <h1>NIU x 木匠 毕涛</h1>
+                    <h2>带着爱犬去兜风</h2>
+                    <p>>我是个木匠，跟伙伴一起开了个工作室在草场地。M1意味着我可以逃离里程恐慌，几天才充一次电。我跟爱犬泰森相处的方式可以更多，可以带着它去上班，跟他一起骑车吹风，一起在园区赛跑。除了让日常出行更方便，能和泰森一起去玩的地方也变多了。</p>
+                    <div class="bot">
+                        <span>六月 20 2016</span>
+                        <a>了解更多<i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <a href="#" class="artist">FRIENDS</a>
+                    <h1>NIU x 皮具匠人 刘师尧</h1>
+                    <h2>精心打磨过的东西一定可以被感知</h2>
+                    <p>最早我是个画画的，后来机缘巧合做了摇滚乐队的经纪人。慢慢地认识人多了，我也有了做一件自己的事情的想法——手工皮具。我是个很注重细节的人，生命里没有“快餐”。我热爱一切精心打磨出来的精致的东西，对于这份工作，我乐在其中。其实M1也算是志同道合的一款产品，因为被精心打磨过的东西是有温度的，你使用的时候就会感觉到，皮具是这样，M1亦然。</p>
+                    <div class="bot">
+                        <span>六月 20 2016</span>
+                        <a>了解更多<i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="images/liushiyao0_e10e7e32.jpg">
+                </div>
+            </li>
+            <li>
+                <div class="right fl_l">
+                    <img src="images/zhaoyunjie0_f1e70c79.jpg">
+                </div>
+                <div class="left fl_r">
+                    <a href="#" class="artist">FRIENDS</a>
+                    <h1>NIU x 导演 赵耘颉</h1>
+                    <h2>想看遍世界</h2>
+                    <p>因为上学的时候学的导演，毕业了就跟几个志同道合的朋友开了家影视工作室。我觉得想拍出好的东西，需要见过许多人和事。所以要马不停蹄的去走，去看。我很贪心，想要身体和灵魂尽量多的时间都在路上，于是我走很多路，看很多书。为了看风景，也为了看人。M1是满足我贪心的很好的伙伴，它带我去看到很多故事，同时它也在我的故事里。</p>
+                    <div class="bot">
+                        <span>六月 20 2016</span>
+                        <a>了解更多<i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <a href="#" class="artist">FRIENDS</a>
+                    <h1>NIU x 老师 刘南男</h1>
+                    <h2>胡同穿梭的无数种可能</h2>
+                    <p>每天穿过胡同去给孩子们上课是我最期待的事。胡同里的氛围让我感觉很真实，晒太阳笑眯眯的老奶奶和凑上来聊天的小朋友。他们很喜欢我车的颜色和样子，总会凑上来问。驾驶技术不算太好的我也可以轻松地穿越每一个胡同，时间充裕的时候我甚至可以探索未知的路线，意外发现新奇的小店，买点喜欢的小东西回家。我的生活圈子不再是以前那样固定了，我开始有时间和好奇心去探索在这个城市的新大陆了。</p>
+                    <div class="bot">
+                        <span>六月 20 2016</span>
+                        <a>了解更多<i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="images/liunannan0_60698e63.jpg">
+                </div>
+            </li>
+            <li>
+                <div class="right fl_l">
+                    <img src="images/dahai0_0d0c452b.jpg">
+                </div>
+                <div class="left fl_r">
+                    <a href="#" class="artist">FRIENDS</a>
+                    <h1>NIU x 平面设计师 刘心</h1>
+                    <h2>高效幸福感</h2>
+                    <p>我是个自由职业者，喜欢手绘、色彩，会经常到朋友的平面设计工作室帮忙，喜欢到处去玩来保持我对这个城市的新鲜感。有了M1之后你可以完全无视北京糟糕的交通。Lomo聚会，古着店，改装工厂，设计工作室...去哪儿都不耽误功夫，原本堵在路上的时间可以和朋友们在一起，这才是美好的一天。</p>
+                    <div class="bot">
+                        <span>六月 20 2016</span>
+                        <a>了解更多<i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <a href="#" class="artist">FRIENDS</a>
+                    <h1>NIU x 古着店店员 大海</h1>
+                    <h2>我与我的大玩具</h2>
+                    <p>我在798上班，园区很大，游客很多。因为M1的轻巧，即使路线很曲折，只要有一点小空不用按喇叭就可以灵活的穿过缓慢而庞大的人流，中午出门买点东西也不会耽误太多时间。加上它的设计，简约还透着一些科技感，把车停在店里，跟所有我爱的大玩具一起，感觉也算是一种收藏。</p>
+                    <div class="bot">
+                        <span>六月 20 2016</span>
+                        <a>了解更多<i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="images/kris0_00b2b93c.jpg">
+                </div>
+            </li>
+            <li>
+                <div class="right fl_l">
+                    <img src="images/kris0_00b2b93c.jpg">
+                </div>
+                <div class="left fl_r">
+                    <a href="#" class="artist">FRIENDS</a>
+                    <h1>NIU x 公司职员 Kris</h1>
+                    <h2>千万种北京生活中的一种</h2>
+                    <p>早上可以8点半起床，把堵车的时间拿来多睡半小时。中午溜去五公里外最爱的餐厅，吃完在暖暖的阳光里发一会儿呆。顺便买一束花插在办公室的花瓶里。时间变得更充裕，工作之外的生活可以变的更悠闲。</p>
+                    <div class="bot">
+                        <span>六月 20 2016</span>
+                        <a>了解更多<i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="left">
+                    <a href="#" class="artist">FRIENDS</a>
+                    <h1>NIU x 时尚造型师 小白</h1>
+                    <h2>知道自己需要什么很重要</h2>
+                    <p>我叫小白，是个造型师，因为还在上学的时候，参加了一个街拍比赛得了奖，又因为去了趟时装周，变得小有名气。大学毕业后就来到北京签约了旅游卫视，做了第一时尚的造型师，一路走来还算顺利。</p>
+                    <div class="bot">
+                        <span>六月 20 2016</span>
+                        <a>了解更多<i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="images/m1-whitebg_e0a20568.jpg">
+                </div>
+            </li>
+            <li>
+                <div class="right fl_l">
+                    <a href="javascript:;"><img src="images/m1-redbg_76e62f73.jpg"></a>
+                </div>
+                <div class="left fl_r">
+                    <a href="#" class="artist">FRIENDS</a>
+                    <h1>NIU x 潮牌创始人 方博</h1>
+                    <h2>真我无畏</h2>
+                    <p>我是一个非知名网红，走的还是特别常规的套路的那种。有底线，无节操，有时候也喜欢喝酒吹牛逼。</p>
+                    <div class="bot">
+                        <span>六月 20 2016</span>
+                        <a>了解更多<i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <a href="#" class="artist">FRIENDS</a>
+                    <h1>NIU x 外籍模特 NAZZAR</h1>
+                    <h2>音乐人与工程师的跨界创作</h2>
+                    <p>我来自乌克兰，现在还在念书。因为从小就有环游世界的梦想，类似的话也听别人说起过，但是大多数都只是说说，很多人连第一步都没有踏出过。我害怕自己也变成那个样子，觉得自己需要马上行动起来。于是趁着假期来到不同的国家，像这次这样，而且我会在当地找一份工作来维持我的生活，自己用努力撑起的...</p>
+                    <div class="bot">
+                        <span>六月 20 2016</span>
+                        <a>了解更多<i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="images/m1-yellowbg_c7fe45d5.jpg">
+                </div>
+            </li>
+            <li>
+                <div class="right fl_l">
+                    <img src="images/m1-graybg_273eea62.jpg">
+                </div>
+                <div class="left fl_r">
+                    <a href="#" class="artist">FRIENDS</a>
+                    <h1>NIU x 古着店老板 刘可</h1>
+                    <h2>风格久驻于时尚</h2>
+                    <p>年轻的时候叛逆嘛，辍学来到北京，过上了自由的充满朋克味儿的生活。那时候为了让我们的音乐更地道，我们看了很多的演出，很多现场，模仿那些出名的乐队演出的状态，研究当时的政治文化，研究他们穿的衣服，慢慢的接触到了vintage文化。</p>
+                    <div class="bot">
+                        <span>四月 21 2016</span>
+                        <a>了解更多<i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <a href="#" class="artist">FRIENDS</a>
+                    <h1>NIU x 花店主人 庞莹</h1>
+                    <h2>我们很搭</h2>
+                    <p>因为天生爱臭美，而且我面对镜头的时候会很奔放，不能自已的那种，所以做了模特。</p>
+                    <div class="bot">
+                        <span>四月 21 2016</span>
+                        <a>了解更多<i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="right">
+                   <a href="javascript:;"><img src="images/m1-bluebg_e60df4de.jpg"></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer_top">
+        <ul>
+            <li>
+                <dl>
+                    <dt>了解产品</dt>
+                    <dd><a href="javascript:;">小牛电动 N1S</a></dd>
+                    <dd><a href="javascript:;">小牛电动 M1</a></dd>
+                    <dd><a href="javascript:;">配件</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>服务与支持</dt>
+                    <dd><a href="javascript:;">查找网点</a></dd>
+                    <dd><a href="javascript:;">小牛驾到</a></dd>
+                    <dd><a href="javascript:;">牛油保</a></dd>
+                    <dd><a href="javascript:;">NIU CARE</a></dd>
+                    <dd><a href="javascript:;">售后政策</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>帮助中心</dt>
+                    <dd><a href="javascript:;">购买指南</a></dd>
+                    <dd><a href="javascript:;">支付方式</a></dd>
+                    <dd><a href="javascript:;">配送政策</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd><a href="javascript:;">公司简介</a></dd>
+                    <dd><a href="javascript:;">联系我们</a></dd>
+                    <dd><a href="javascript:;">加入我们</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>关注我们</dt>
+                    <dd><a href="javascript:;"><i class="fa fa-weixin"></i>微信公众号</a></dd>
+                    <dd><a href="javascript:;"><i class="fa fa-weibo"></i>新浪微博</a></dd>
+                    <dd><a href="javascript:;">配件</a></dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>客服</dt>
+                    <dd><a href="javascript:;">400-6388-666</a></dd>
+                    <dd><a href="javascript:;">周一至周日 6:00-21:00</a></dd>
+                    <dd><a href="javascript:;">仅收市话费</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+    <div class="footer_bot">
+        <p class="bot_left">© 2016 niu.com All rights reserved. 北京牛电科技有限责任公司 京ICP备15010724号-1 <img src="images/cert.png" style="width: 20px;"/></p>
+        <div class="bot_right">
+            <a href="http://www.niu.com/en/"> <i class="icon-global"></i>International</a>
+            <span>中国</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
